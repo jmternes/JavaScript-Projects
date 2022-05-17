@@ -7,5 +7,5 @@ function myDictionary() {
         Hometown:"Akron"
     };
     delete Lebron.Hometown;
-    document.getElementById("Dictionary").innerHTML = Lebron.Height;
+    document.getElementById("Dictionary").innerHTML = Lebron.Hometown;
 }
