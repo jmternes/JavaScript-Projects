@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+<body>
+    <p>How many seconds would you like to set your timer for?</p>
+    <input id="seconds" value="" />
+    <button onclick="countdown()">Click here</button>
+    <p id="timer"></p>
+    <br>
+    <br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./CSS/images/thenorthman.jpg" alt="">
+            <div class="text">The Northman | Robert Eggers</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./CSS/images/morbius.jpg" alt="">
+            <div class="text">Morbius | Daniel Espinosa</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./CSS/images/thebatman.jpg" alt="">
+            <div class="text">The Batman | Matt Reeves</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+<script src="JS/main.js"></script>
+</body>
+</html>
