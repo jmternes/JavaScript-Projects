@@ -139,7 +139,6 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     x = x1,
     //this variable stores temporary y axis data we update in our animation loop
     y = y1;
-}
 
 //this function interacts with the canvas
 function animateLineDrawing() {
@@ -195,7 +194,7 @@ audio('./media/winner.mp3');
 animateLineDrawing();
 //this line waits one second, then clears canvas, resets game, and allows clicking
 setTimeout(function() {clear(); resetGame(); }, 1000);
-
+}
 //This function resets the game in the event of a tie or win.
 function resetGame() {
     //this for loop iterates through each html square element
