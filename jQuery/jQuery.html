@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+<script>
+$(document).ready(function() {
+    $("html").append( //targeting the html file in its entirety, then appends all these html elements with .append()
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='p1'>Paragraph 1</p>\
+                    <p id='p2'>Paragraph 2</p>\
+                    <p id='p3'>Paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>"
+
+    );
+    $("#p1").css({"color":"blue"});
+    $("#p2").css({"color":"red"}); //this targets paragraph with id p2, uses .css() method, then changes color to red
+    $("#p3").click(function() { //this targets paragraph with id p3, uses a mouse event method .click(), and uses a function that hides our header, by targeting h1 and using .hide()
+        $('h1').hide();
+    });
+});
+
+
+</script>
+</body>
+</html>
