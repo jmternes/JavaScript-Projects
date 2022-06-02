@@ -21,15 +21,15 @@
 			
 			// STEP 3: define the ajax response callback method ------ defines the function to be used when readyState changes... if ready, we call the 'content.html' to be displayed
 			ajax.onreadystatechange = function() {
-			if (ajax.readyState == 4) {
-				document.getElementbyId('content').innerHTML = ajax.responseText;
+			if (ajax.readyState = 4) {
+				document.getElementById('content').innerHTML = ajax.responseText;
 				}
 			}
 			
 			// STEP 4: send the ajax request for data ------- this function defines getContent (the onclick action in the HTML above) to send for the data, as well as remove the button with id "btn_content"
 			function getContent() {
 				ajax.send();
-				document.getElementbyId('btn_content').style.display = 'none';
+				document.getElementById('btn_content').style.display = 'none';
 			}
 			
 			
