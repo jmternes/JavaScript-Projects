@@ -4,3 +4,4 @@
 
 ### Projects
 
+#### TicTacToe Project | https://github.com/jmternes/JavaScript-Projects/tree/main/Pizza_Project
